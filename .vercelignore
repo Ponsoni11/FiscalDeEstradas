@@ -6,10 +6,10 @@ dist/
 .replit
 *.log
 .env*
-package.json
-vite.config.ts
-tsconfig.json
-components.json
-drizzle.config.ts
-postcss.config.js
-tailwind.config.ts
+/package.json
+/vite.config.ts
+/tsconfig.json
+/components.json
+/drizzle.config.ts
+/postcss.config.js
+/tailwind.config.ts

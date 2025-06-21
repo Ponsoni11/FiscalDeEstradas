@@ -20,14 +20,17 @@ Aplicativo Progressive Web App (PWA) para documentação offline de ocorrências
 **Problema**: O Vercel detecta o projeto como fullstack e executa o servidor Express.
 
 **Solução**: Configure manualmente no Vercel:
-1. Acesse vercel.com → New Project → Import `Ponsoni11/FiscalDeEstradas`
-2. **Configure exatamente assim**:
+1. **PRIMEIRO**: Sincronize arquivos no Replit (aba Git → Commit & Push)
+2. Acesse vercel.com → New Project → Import `Ponsoni11/FiscalDeEstradas`
+3. **Configure exatamente assim**:
    - **Framework Preset**: Other
    - **Root Directory**: `client`
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
    - **Install Command**: `npm install`
-3. Deploy
+4. Deploy
+
+**IMPORTANTE**: O erro "package.json not found" indica que os arquivos da pasta `client/` não foram sincronizados com o GitHub ainda.
 
 **Resultado**: PWA React puro sem servidor, funcionando offline no Android.
 
