@@ -15,16 +15,21 @@ Aplicativo Progressive Web App (PWA) para documentação offline de ocorrências
 
 ## Deploy no Vercel
 
-### Passo a Passo:
-1. Acesse vercel.com e conecte sua conta GitHub
-2. Clique em "New Project" e selecione `Ponsoni11/FiscalDeEstradas`
-3. **IMPORTANTE**: Configure exatamente assim:
-   - **Framework Preset**: Vite
+### Solução Definitiva para Vercel:
+
+**Problema**: O Vercel detecta o projeto como fullstack e executa o servidor Express.
+
+**Solução**: Configure manualmente no Vercel:
+1. Acesse vercel.com → New Project → Import `Ponsoni11/FiscalDeEstradas`
+2. **Configure exatamente assim**:
+   - **Framework Preset**: Other
    - **Root Directory**: `client`
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
    - **Install Command**: `npm install`
-4. Clique em "Deploy"
+3. Deploy
+
+**Resultado**: PWA React puro sem servidor, funcionando offline no Android.
 
 ### Alternativa (Vercel.json):
 O arquivo `vercel.json` na raiz configura automaticamente o build do frontend.
