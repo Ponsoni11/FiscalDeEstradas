@@ -1,0 +1,60 @@
+Desenvolva um aplicativo Android que priorize o funcionamento offline, projetado para auxiliar engenheiros rodoviários na identificação e documentação de ocorrências nas estradas. O aplicativo deve armazenar imagens localmente no dispositivo de forma publicamente acessível, permitindo fácil transferência via PC, e-mail ou WhatsApp. Uma característica essencial é a incorporação permanente de uma marca d'água personalizável diretamente nas imagens capturadas.
+
+O aplicativo deve incluir as seguintes telas e funcionalidades:
+
+1. Tela Inicial 
+
+Botão de Configuração: Acesse um menu de configurações para personalizar as propriedades da marca d'água, qualidade da foto e convenções de nomenclatura das imagens.
+Rodovias: Uma lista selecionável de rodovias pré-cadastradas (ex: SP-310, SP-333, SP-326, SP-351 e SP-323).
+Sentido: Opções selecionáveis para direções cardeais (Leste, Oeste, Norte, Sul) e "central".
+Localização: Campos de entrada para Quilômetros (Km) e Metros (M) para especificar a localização exata da ocorrência na rodovia.
+Atividade: Uma lista de atividades de ocorrência predefinidas, como Pavimento, Faixa de Domínio, Drenagem, Segurança Rodoviária, Estruturas, Prédios e Pátios, Iluminação, Sinalização e Operação.
+Sub Atividade: Esta lista muda dinamicamente com base na "Atividade" selecionada. Por exemplo, se "Drenagem" for escolhido, as opções como "Reparo de drenagem" e "Limpeza de drenagem" aparecerão. Se "Pavimento" for selecionado, opções como "Panelo/Buraco", "Trinca do tipo jacaré", "Remendo", "Trinca isolada" e etc. deverão estar disponíveis.
+
+
+Botão de Tirar Foto: Ativa a câmera do dispositivo para capturar uma imagem.
+Botão Arquivos de Fotos: Fornece acesso a uma lista de fotos tiradas pelo aplicativo e armazenadas no dispositivo.
+2. Tela de Configuração 
+
+Qualidade da Foto: 
+Resolução: Padrão "Alta (1920x1080)" com opção de alteração.
+Qualidade de Compressão: Ajustável através de um slider, com padrão de 85%.
+Marca D'água: 
+Posição: Posição selecionável para a marca d'água, com "Canto inferior esquerdo" como padrão.
+Informações na marca d'água: Opções de caixa de seleção para incluir Data/Hora, Coordenadas GPS, Rodovia, Sentido, Localização, Usuário e Observações.
+Nome do Arquivo: 
+Padrão de nomenclatura: Exibe e permite a configuração da convenção de nomenclatura de arquivos, por exemplo, rodovia_sentido_data_hora_ocorre.jpg. Um exemplo deve ser fornecido: BRTOT_Norte_20231215_143022_Buraco.jpg.
+Armazenamento: 
+Caixa de seleção para "Backup automático na nuvem".
+Caixa de seleção para "Organizar por data".
+Caixa de seleção para "Organizar por rodovia".
+Gerenciamento de Listas: 
+Adicionar Rodovia: Botão para adicionar novas rodovias à "Lista das Rodovias".
+Adicionar Atividade: Botão para adicionar novas atividades à "Lista das Atividades".
+Adicionar Sub-Atividade: Botão para adicionar novas sub-atividades à "Lista das Sub-Atividades".
+3. Tela Após Tirar a Foto 
+
+Miniatura da foto: Exibe uma versão em miniatura da foto capturada com a marca d'água aplicada, permitindo ao usuário revisá-la antes de salvar.
+Botão de tirar novamente a foto: Opção para tirar a foto novamente.
+Botão de Salvar: Salva a foto internamente no dispositivo.
+Botão para editar as informações da marca d'agua: Permite editar as informações que serão incorporadas na marca d'água.
+4. Tela Gerenciar Arquivos de Fotos 
+
+Opções de Filtro: Fornecer capacidades de filtragem para organizar a lista de fotos por data (mais recentes para mais antigas), rodovia, sentido e Km+M (do menor para o maior).
+BOTÃO para selecionar todas: Um botão para selecionar todas as fotos, se necessário.
+Resumo da descrição da foto: Um resumo da descrição da foto, com a possibilidade de clicar e modificar as informações da marca d'água.
+Botão de Editar as informações da foto, marca d'agua: Especificamente para editar as informações incorporadas na marca d'água.
+Botão para enviar as fotos selecionadas: Permite o envio das fotos selecionadas.
+Botão para enviar um relatório ou arquivo excel, das fotos selecionada: Permite o envio de um relatório ou arquivo Excel contendo informações sobre as fotos selecionadas.
+5. Tela de Edição da Foto 
+
+Visualização da miniatura da foto: Exibe uma visualização em miniatura da foto.
+Rodovias: Campo editável para a rodovia.
+Sentido: Campo editável para o sentido.
+Localização: Km: Campo editável para a localização em Km.
+Localização: M: Campo editável para a localização em M.
+Atividade: Lista editável de atividades de ocorrência.
+Sub Atividade: Campo editável para a sub-atividade.
+Botão Retornar: Botão para voltar sem salvar as alterações.
+Botão Salva alterações: Botão para salvar as edições.
+O foco principal do aplicativo é a funcionalidade offline, garantindo que todas as características essenciais, especialmente a captura de fotos e o armazenamento local com incorporação de marca d'água, funcionem perfeitamente sem conexão com a internet. As imagens armazenadas devem ser acessíveis a outros aplicativos para compartilhamento.
